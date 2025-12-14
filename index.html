@@ -9,6 +9,22 @@
         .reveal pre code {
             max-height: 400px;
         }
+
+        /* Логотип МФТИ в футере */
+        .reveal .slides::after {
+            content: '';
+            position: fixed;
+            bottom: 2px;
+            right: 10px;
+            width: 120px;
+            height: 30px;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgNTAiIHdpZHRoPSIyMDAiIGhlaWdodD0iNTAiPgogIDwhLS0g0JrQsNGA0LTQuNC+0LPRgNCw0LzQvNCwINGB0LvQtdCy0LAgLS0+CiAgPHBhdGggZD0iTSA1IDI1IEwgMTUgMjUgTCAyMCAxNSBMIDI1IDM1IEwgMzAgMjAgTCAzNSAyNSBMIDQ1IDI1IiAKICAgICAgICBzdHJva2U9IiMwMDY2Q0MiIAogICAgICAgIHN0cm9rZS13aWR0aD0iMi41IiAKICAgICAgICBmaWxsPSJub25lIiAKICAgICAgICBzdHJva2UtbGluZWNhcD0icm91bmQiIAogICAgICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICAKICA8IS0tINCi0LXQutGB0YIg0JzQpNCi0JggLS0+CiAgPHRleHQgeD0iNTUiIHk9IjMyIiAKICAgICAgICBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIAogICAgICAgIGZvbnQtc2l6ZT0iMjQiIAogICAgICAgIGZvbnQtd2VpZ2h0PSI5MDAiIAogICAgICAgIGZvbnQtc3R5bGU9Iml0YWxpYyIKICAgICAgICBmaWxsPSIjMDAwMDAwIj7QnNCk0KLQmDwvdGV4dD4KICAKICA8IS0tINCb0LjQvdC40Y8g0L/QvtC0INGC0LXQutGB0YLQvtC8IC0tPgogIDxsaW5lIHgxPSI1NSIgeTE9IjM2IiB4Mj0iMTQ1IiB5Mj0iMzYiIAogICAgICAgIHN0cm9rZT0iIzAwNjZDQyIgCiAgICAgICAgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=');
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 1000;
+            pointer-events: none;
+        }        
+
     </style>
 </head>
 <body>
