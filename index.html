@@ -199,7 +199,7 @@
                 <br><br>
                 I had a beautiful app running in 30 minutes (that I've wanted for a while), on second iteration it broke, and I said "lol" and gave up. But it was fun, felt like the future. Totally plausible for throwaway weekend projects.
             </div>
-            <div class="tweet-date">📅 2 февраля 2025 · 🐦 Twitter/X</div>
+            <div class="tweet-date">📅 2 февраля 2025</div>
         </div>
     </div>
 
@@ -224,11 +224,10 @@
         const modal = document.getElementById('tweetModal');
         const closeBtn = document.querySelector('.close-modal');
 
-        // Открытие модального окна при клике на ссылки с твитом Карпати
+        // Открытие модального окна при клике на ссылки с цитатой Карпати
         document.addEventListener('click', function(e) {
             if (e.target.tagName === 'A' && 
-                (e.target.href.includes('x.com/karpathy') || 
-                 e.target.href.includes('twitter.com/karpathy'))) {
+                e.target.href.includes('restricted.resource.com/karpathy')) {
                 e.preventDefault();
                 modal.style.display = 'block';
             }

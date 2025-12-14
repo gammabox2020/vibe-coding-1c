@@ -256,7 +256,7 @@
 
 ## Источники
 
-1. [Andrej Karpathy — твит о вайб-кодинге](https://x.com/karpathy/status/1886192184808149383) (февраль 2025)
+1. [Andrej Karpathy — твит о вайб-кодинге](https://restricted.resource.com/karpathy/status/1886192184808149383) (февраль 2025)
 2. [1С LLM Бенчмарк](https://vibecoding1c.ru/bench) — рейтинг нейросетей для 1С
 3. [Лучшие нейросети для вайбкодинга на 1С](https://habr.com/ru/articles/971106/) — Habr, ноябрь 2025
 4. [AI-агенты для 1С: от генерации кода до автоматизации](https://infostart.ru/1c/articles/2509402/) — Infostart
