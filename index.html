@@ -37,6 +37,28 @@
         </div>
     </div>
 
+    <!-- Модальное окно с цитатой твита -->
+    <div id="tweetModal" class="tweet-modal">
+        <div class="tweet-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="tweet-header">
+                <div class="tweet-avatar">AK</div>
+                <div class="tweet-author">
+                    <div class="tweet-author-name">Andrej Karpathy</div>
+                    <div class="tweet-author-handle">@karpathy</div>
+                </div>
+            </div>
+            <div class="tweet-text">
+                There's a new kind of coding I call "vibe coding", where you fully give in to the vibes, embrace exponentials, and forget that the code even exists.
+                <br><br>
+                I'm coding with Cursor + Claude Sonnet, voice dictating instructions with SuperWhisper, listening to new Daft Punk Tron soundtrack, hitting "Accept All", and not reading the code as it grows beyond understanding.
+                <br><br>
+                I had a beautiful app running in 30 minutes (that I've wanted for a while), on second iteration it broke, and I said "lol" and gave up. But it was fun, felt like the future. Totally plausible for throwaway weekend projects.
+            </div>
+            <div class="tweet-date">📅 2 февраля 2025</div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.0/reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.0/plugin/markdown/markdown.min.js"></script>
     <script>
@@ -48,6 +70,39 @@
             center: true,
             transition: 'slide'
         });
+
+        // Модальное окно для твита
+        const modal = document.getElementById('tweetModal');
+        const closeBtn = document.querySelector('.close-modal');
+
+        // Открытие модального окна при клике на ссылки с цитатой Карпати
+        document.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A' && 
+                e.target.href.includes('restricted.resource.com/karpathy')) {
+                e.preventDefault();
+                modal.style.display = 'block';
+            }
+        });
+
+        // Закрытие по клику на крестик
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // Закрытие по клику вне окна
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Закрытие по ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                modal.style.display = 'none';
+            }
+        });
+
     </script>
 </body>
 </html>
